@@ -1,0 +1,135 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: hwb(40 83% 13%);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .Navs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3px;
+    padding: 10px;
+    gap: 7px;
+    background-color: black;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    text-decoration: none;
+    border: none;
+  }
+  .a {
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    text-decoration: none;
+    border: none;
+    margin: 1px;
+  }
+  p {
+    border: solid blue 3px;
+    border-radius: 20px;
+    margin: 2px;
+    max-width: 900px;
+    padding: 20px;
+    background-color: azure;
+  }
+  p:hover {
+    background-color: brown;
+    border: white dotted black;
+    color: whitesmoke;
+  }
+
+  /* Main Div */
+  .main{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  /* main Form */
+  .form{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+    column-gap: 20px;
+    padding: 20px;
+    border: solid grey 1px;
+    border-radius: 5px;
+  }
+/* sub main form */
+.user-form{
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+    padding: 100px 40px;
+    justify-items:center;
+    align-items: center;
+    margin: auto;
+}
+/* Target labels */
+.lbl{
+    display: flex;
+    justify-items: start;
+    justify-content: start;
+    align-items:flex-start;
+}
+/* inputs */
+.py{
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.px{
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.inp{
+    color: black;
+    border: solid #333 1px;
+    padding-top: 10px;
+    margin: 7px 1px;
+    padding-bottom: 10px;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-radius: 10px;
+}
+/* Details */
+.details{
+    display: flex;
+    margin: 1px 35px;
+}
+.user-dts #res{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    color: black;
+    align-items: flex-start;
+     width: 100%;
+     height: 300px;
+     border-radius: 10px;
+}
+.sub-user-dts{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    row-gap: 10px;
+    align-items: center;
+    justify-items: center;
+    margin: 1px 4px;
+}
+/* btn */
+.btn{
+    padding: 9px 32px;
+    border: none;
+    border-radius: 3px;
+    background-color: indigo;
+    color: white;
+    margin-top: 7px;
+}

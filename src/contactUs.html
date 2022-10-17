@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./contactUs.css">
+    <title>contact us</title>
+    <style>
+    
+    </style>
+  </head>
+  <body>
+    <ul class="Navs">
+      <div><a href="./home.html" class="a">HOME</a></div>
+      <div><a href="./about.html" class="a"> ABOUT US</a></div>
+      <div><a href="./contactUs.html" class="a">CONTACT US</a></div>
+    </ul>
+    <!-- Main div for contact -->
+    <div class="main">
+      <!-- Form -->
+      <div class="form">
+        <form class="user-form" >
+          <label for="userName" class="lbl">User Name</label>
+          <input type="text" class="inp py px" id="username" />
+          <label for="email" class="lbl">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            autocomplete
+            required
+            class="inp py px"
+          />
+          <label for="password" class="lbl">Password</label>
+          <input type="password" name="password" id="password" class="inp py px" />
+          <input type="submit" value="Submit" class="btn" />
+        </form>
+      </div>
+      <!-- contact details -->
+      <div class="details">
+      <fieldset class="user-dts">
+        <legend>Contact Us</legend>
+        <div class="sub-user-dts">
+          <strong style="margin-right:7px;">Email:</strong>
+          <strong>enockiprop043@gmail.com</strong>
+        </div>
+        <div class="sub-user-dts">
+          <strong style="margin-right:7px;">Phone number:</strong>
+          <strong>+254679444333</strong>
+        </div>
+        <div class="sub-user-dts">
+          <strong  style="margin-right:7px; display: flex; flex-direction: row;">Social</strong>
+          <strong>twitter.fb.whatsup</strong>
+        </div>
+      </fieldset>
+        </div>
+      </div>
+    </div>
+    <script>
+      var username=document.getElementById('username')
+      var password=document.getElementById('password')
+      var email=document.getElementById('email')
+      var results=document.getElementById('res')
+      addEventListener('submit',(e)=>{
+        e.preventDefault()
+        let newUser=username.value
+        let newPassword=password.value
+        let newEmail=email.value
+         let user='username:'+ newUser + 'password:'+ newPassword +  'email:'+ newEmail
+         console.log(user); 
+         newUser=null;
+         newPassword=null;
+         newEmail=null;
+      })
+    </script>
+  </body>
+</html>
